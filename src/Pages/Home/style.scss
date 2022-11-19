@@ -1,0 +1,249 @@
+.hero {
+  background: #f5f5f5;
+  padding-top: 100px;
+  overflow: hidden;
+  padding-bottom: 100px;
+  .row {
+    align-items: center;
+  }
+  .text-wrapper {
+    max-width: 667px;
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 44px;
+
+      color: #242426;
+    }
+    p {
+      margin-top: 15px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 30px;
+      /* or 176% */
+
+      color: #242426;
+    }
+    button {
+      margin-top: 30px;
+    }
+  }
+  .img-wrapper {
+    height: 377px;
+    // overflow-y: hidden;
+    position: relative;
+    .img-hero {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      // z-index: -1;
+      // transform: translateX(100px);
+    }
+  }
+  .icons-wrapper {
+    position: absolute;
+    width: 41px;
+    right: 46px;
+    .list-icons {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+
+      .item-icons {
+        background: #ffffff;
+        border-radius: 10px 0px 0px 10px;
+        margin: 2px;
+        padding: 2px;
+        width: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 41px;
+        a {
+          color: #242426;
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+.school-info {
+  background: rgb(255, 193, 193);
+  padding: 20px 0;
+
+  .list-icons {
+    display: flex;
+    list-style: none;
+    width: 200px;
+    justify-content: space-between;
+    padding-left: 0 !important;
+    margin: 0 !important; 
+    li {
+      a {
+        i {
+          font-size: 28px;
+          color: #32d74b;
+        }
+      }
+    }
+  }
+  .radios {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .responsive-order1 {
+    order: 2;
+    .text-wrapper {
+      text-align: center;
+      h2 {
+        text-align: center;
+        font-size: 30px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .responsive-order2 {
+    .img-hero {
+      width: 100%;
+    }
+  }
+  .icons-wrapper {
+    position: static;
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    right: 0 !important;
+    .list-icons {
+      position: relative;
+      top: -40px;
+      display: flex;
+      flex-direction: row !important;
+      list-style: none;
+      padding-left: 0 !important;
+
+      .item-icons {
+        background: #ffffff;
+        border-radius: 10px !important;
+        margin: 2px;
+        // padding: 2px;
+        width: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 41px;
+        a {
+          color: #242426;
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .responsive-order1 {
+    order: 2;
+    .text-wrapper {
+      text-align: center;
+      h2 {
+        text-align: center;
+        font-size: 20px;
+      }
+      p {
+        text-align: center;
+        font-size: 16px;
+      }
+    }
+  }
+  .responsive-order2 {
+    display: block;
+
+    .img-hero {
+      width: 100%;
+    }
+  }
+  .icons-wrapper {
+    position: absolute !important;
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    right: 0 !important;
+
+    .list-icons {
+      position: relative;
+      top: -40px;
+      display: flex;
+      flex-direction: row !important;
+      list-style: none;
+      padding-left: 0 !important;
+
+      .item-icons {
+        background: #ffffff;
+        border-radius: 10px !important;
+        margin: 2px;
+        // padding: 2px;
+        width: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 41px;
+        a {
+          color: #242426;
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  .school-info {
+  background: rgb(255, 255, 255);
+  padding: 20px 0;
+  .row{
+    align-items: center;
+  }
+  .responsive-order-info{
+    order: 2;
+    margin-top: 50px !important; 
+  .list-icons {
+    display: flex;
+    list-style: none;
+    width: 200px;
+    justify-content: space-between;
+    padding-left: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+      a {
+        i {
+          font-size: 28px;
+          color: #32d74b;
+        }
+      }
+    }
+  }
+  }
+
+  .radios {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+}
